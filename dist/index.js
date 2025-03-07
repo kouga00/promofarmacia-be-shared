@@ -14,8 +14,10 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./schemas/pharmacy.schema"), exports);
-__exportStar(require("./schemas/product.schema"), exports);
-__exportStar(require("./interfaces/pharmacy.interface"), exports);
-__exportStar(require("./interfaces/product.interface"), exports);
+__exportStar(require("./mongodb/schemas/product.schema"), exports);
+__exportStar(require("./mongodb/schemas/pharmacy.schema"), exports);
+__exportStar(require("./mongodb/schemas/user.schema"), exports);
+__exportStar(require("./mongodb/interfaces/product.interface"), exports);
+__exportStar(require("./mongodb/interfaces/pharmacy.interface"), exports);
+__exportStar(require("./mongodb/interfaces/user.interface"), exports);
 //# sourceMappingURL=index.js.map
