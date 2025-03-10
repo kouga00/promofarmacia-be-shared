@@ -20,7 +20,7 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "providerAuthId", void 0);
 __decorate([
-    (0, mongoose_1.Prop)({ type: String, enum: ['auth0'], required: true }),
+    (0, mongoose_1.Prop)({ type: String, enum: user_interface_1.ProviderAuth, required: true }),
     __metadata("design:type", String)
 ], User.prototype, "providerAuthName", void 0);
 __decorate([
