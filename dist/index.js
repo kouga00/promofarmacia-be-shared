@@ -17,7 +17,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./mongodb/schemas/product.schema"), exports);
 __exportStar(require("./mongodb/schemas/pharmacy.schema"), exports);
 __exportStar(require("./mongodb/schemas/user.schema"), exports);
+__exportStar(require("./mongodb/schemas/promo.schema"), exports);
+__exportStar(require("./mongodb/schemas/service.schema"), exports);
 __exportStar(require("./mongodb/interfaces/product.interface"), exports);
 __exportStar(require("./mongodb/interfaces/pharmacy.interface"), exports);
 __exportStar(require("./mongodb/interfaces/user.interface"), exports);
+__exportStar(require("./mongodb/interfaces/promo.interface"), exports);
+__exportStar(require("./mongodb/interfaces/service.interface"), exports);
 //# sourceMappingURL=index.js.map

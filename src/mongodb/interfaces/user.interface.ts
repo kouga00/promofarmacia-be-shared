@@ -1,3 +1,5 @@
+import { Types } from "mongoose";
+
 export const UserRole = {
   ADMIN: 'admin',
   OPERATOR: 'operator',
@@ -14,6 +16,7 @@ export const AuthProvider = {
 export type TAuthProvider = (typeof AuthProvider)[keyof typeof AuthProvider];
 
 export interface IUser {
+  readonly _id?: Types.ObjectId;
   readonly authProviderId: string;
   readonly authProvider: TAuthProvider;
   readonly firstname: string;

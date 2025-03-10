@@ -1,11 +1,9 @@
 import { Types } from "mongoose";
-export interface IProduct {
+export interface IService {
     readonly _id?: Types.ObjectId;
     readonly name: string;
-    readonly brand: string;
     readonly category: string;
     readonly tags: string[];
-    readonly size: string;
     readonly imageUrl: string;
     readonly description: string;
     readonly createdAt?: Date;

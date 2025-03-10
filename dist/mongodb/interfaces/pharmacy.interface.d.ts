@@ -1,5 +1,6 @@
+import { Types } from "mongoose";
 export interface IPharmacy {
-    readonly _id?: string;
+    readonly _id?: Types.ObjectId;
     readonly name: string;
     readonly owner: string;
     readonly address: string;
