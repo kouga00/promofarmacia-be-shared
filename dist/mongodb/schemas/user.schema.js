@@ -18,11 +18,11 @@ exports.User = User;
 __decorate([
     (0, mongoose_1.Prop)({ type: String, required: true }),
     __metadata("design:type", String)
-], User.prototype, "providerAuthId", void 0);
+], User.prototype, "authProviderId", void 0);
 __decorate([
-    (0, mongoose_1.Prop)({ type: String, enum: user_interface_1.ProviderAuth, required: true }),
+    (0, mongoose_1.Prop)({ type: String, enum: user_interface_1.AuthProvider, required: true }),
     __metadata("design:type", String)
-], User.prototype, "providerAuthName", void 0);
+], User.prototype, "authProvider", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ type: String, enum: user_interface_1.UserRole, required: true }),
     __metadata("design:type", String)

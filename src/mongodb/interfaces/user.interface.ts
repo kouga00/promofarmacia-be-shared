@@ -5,17 +5,17 @@ export const UserRole = {
   COMPANY: 'company',
 } as const;
 
-export type TUserRole = typeof UserRole[keyof typeof UserRole];
+export type TUserRole = (typeof UserRole)[keyof typeof UserRole];
 
-export const ProviderAuth = {
+export const AuthProvider = {
   AUTH0: 'auth0',
 } as const;
 
-export type TProviderAuth = typeof ProviderAuth[keyof typeof ProviderAuth];
+export type TAuthProvider = (typeof AuthProvider)[keyof typeof AuthProvider];
 
 export interface IUser {
-  readonly providerAuthId: string;
-  readonly providerAuthName: TProviderAuth;
+  readonly authProviderId: string;
+  readonly authProvider: TAuthProvider;
   readonly firstname: string;
   readonly lastname: string;
   readonly role: TUserRole;

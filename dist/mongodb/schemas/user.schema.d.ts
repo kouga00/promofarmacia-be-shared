@@ -1,8 +1,8 @@
 import { HydratedDocument } from 'mongoose';
-import { TProviderAuth, TUserRole } from '../interfaces/user.interface';
+import { TAuthProvider, TUserRole } from '../interfaces/user.interface';
 export declare class User {
-    readonly providerAuthId: string;
-    readonly providerAuthName: TProviderAuth;
+    readonly authProviderId: string;
+    readonly authProvider: TAuthProvider;
     readonly role: TUserRole;
     readonly firstname: string;
     readonly lastname: string;

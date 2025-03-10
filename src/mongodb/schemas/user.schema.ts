@@ -1,14 +1,14 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
-import { ProviderAuth, TProviderAuth, TUserRole, UserRole } from '../interfaces/user.interface';
+import { AuthProvider, TAuthProvider, TUserRole, UserRole } from '../interfaces/user.interface';
 
 @Schema({ versionKey: false, timestamps: true })
 export class User {
   @Prop({ type: String, required: true })
-  public readonly providerAuthId!: string;
+  public readonly authProviderId!: string;
 
-  @Prop({ type: String, enum: ProviderAuth, required: true })
-  public readonly providerAuthName!: TProviderAuth;
+  @Prop({ type: String, enum: AuthProvider, required: true })
+  public readonly authProvider!: TAuthProvider;
 
   @Prop({ type: String, enum: UserRole, required: true })
   public readonly role!: TUserRole;
